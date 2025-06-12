@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Myanmar Foundation - UNESCO Project Organizational Chart</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            padding: 40px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 3px solid #2c5aa0;
+            padding-bottom: 20px;
+        }
+        
+        .header h1 {
+            color: #2c5aa0;
+            font-size: 28px;
+            margin: 0;
+            font-weight: 700;
+        }
+        
+        .header p {
+            color: #666;
+            font-size: 16px;
+            margin: 10px 0 0 0;
+        }
+        
+        .org-chart {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+        
+        .level {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 30px;
+            width: 100%;
+            flex-wrap: wrap;
+        }
+        
+        .position {
+            background: white;
+            border: 2px solid #ddd;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            min-width: 200px;
+        }
+        
+        .position:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+        }
+        
+        .executive {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            min-width: 280px;
+        }
+        
+        .lead {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            border: none;
+        }
+        
+        .coordinator {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+            border: none;
+        }
+        
+        .editorial {
+            background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+            color: white;
+            border: none;
+        }
+        
+        .technical {
+            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+            color: white;
+            border: none;
+        }
+        
+        .position h3 {
+            margin: 0 0 10px 0;
+            font-size: 18px;
+            font-weight: 600;
+        }
+        
+        .position h4 {
+            margin: 0 0 15px 0;
+            font-size: 16px;
+            font-weight: 500;
+            opacity: 0.9;
+        }
+        
+        .position p {
+            margin: 5px 0;
+            font-size: 14px;
+            line-height: 1.4;
+            opacity: 0.9;
+        }
+        
+        .connector {
+            width: 2px;
+            height: 20px;
+            background: #2c5aa0;
+            margin: 0 auto;
+        }
+        
+        .team-section {
+            border: 2px dashed #ccc;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 10px;
+            background: rgba(44, 90, 160, 0.02);
+        }
+        
+        .team-label {
+            text-align: center;
+            font-weight: 600;
+            color: #2c5aa0;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+        
+        .stats {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 30px;
+            text-align: center;
+        }
+        
+        .stats h3 {
+            color: #2c5aa0;
+            margin-bottom: 15px;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .stat-item {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .stat-number {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2c5aa0;
+        }
+        
+        .stat-label {
+            color: #666;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+        
+        @media (max-width: 768px) {
+            .level {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .team-section {
+                margin: 10px 0;
+            }
+            
+            .position {
+                min-width: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Build Myanmar Foundation</h1>
+            <p>UNESCO Educational Podcasts Project - Team Structure & Human Resources</p>
+        </div>
+        
+        <div class="org-chart">
+            <!-- Executive Level -->
+            <div class="level">
+                <div class="position executive">
+                    <h3>James Win</h3>
+                    <h4>Executive Producer</h4>
+                    <p>• Overall project oversight & UNESCO liaison</p>
+                    <p>• 5+ years educational content experience</p>
+                    <p>• Strategic direction & quality assurance</p>
+                    <p>• Partnership management</p>
+                </div>
+            </div>
+            
+            <div class="connector"></div>
+            
+            <!-- Department Level -->
+            <div class="level">
+                <div class="team-section">
+                    <div class="team-label">Audio Production Team</div>
+                    <div style="display: flex; flex-direction: column; gap: 15px; align-items: center;">
+                        <div class="position lead">
+                            <h3>Chit San Maung (Sam)</h3>
+                            <h4>Lead Audio Producer</h4>
+                            <p>• 3+ years professional audio production</p>
+                            <p>• Lead production oversight</p>
+                            <p>• Technical quality assurance</p>
+                        </div>
+                        
+                        <div style="display: flex; gap: 15px; flex-wrap: wrap; justify-content: center;">
+                            <div class="position technical">
+                                <h3>Aung Htet Myat</h3>
+                                <h4>Sound Engineer</h4>
+                                <p>• Audio recording setup</p>
+                                <p>• Technical equipment management</p>
+                                <p>• Live recording supervision</p>
+                            </div>
+                            
+                            <div class="position technical">
+                                <h3>Nay Aung</h3>
+                                <h4>Post-Production Specialist</h4>
+                                <p>• Audio editing & enhancement</p>
+                                <p>• Consistency maintenance</p>
+                                <p>• Final mastering</p>
+                            </div>
+                            
+                            <div class="position technical">
+                                <h3>Myat Htet Hlaing</h3>
+                                <h4>Audio Design Specialist</h4>
+                                <p>• Creative audio branding</p>
+                                <p>• Sound effects integration</p>
+                                <p>• Accessibility optimization</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="position coordinator">
+                    <h3>Amy</h3>
+                    <h4>Project Coordination & Outreach</h4>
+                    <p>• Project planning & coordination</p>
+                    <p>• Teacher network engagement (2,500+)</p>
+                    <p>• Expert consultation management</p>
+                    <p>• Partnership development</p>
+                </div>
+                
+                <div class="team-section">
+                    <div class="team-label">Editorial & Content Team</div>
+                    <div style="display: flex; gap: 15px; flex-wrap: wrap; justify-content: center;">
+                        <div class="position editorial">
+                            <h3>Y3A Group</h3>
+                            <h4>Main Content Writing Team</h4>
+                            <p>• Content accuracy & validity</p>
+                            <p>• Script review & fact-checking</p>
+                            <p>• Educational standards compliance</p>
+                        </div>
+                        
+                        <div class="position editorial">
+                            <h3>Zwe Thukha Min</h3>
+                            <h4>Content Researcher</h4>
+                            <p>• Educational research & development</p>
+                            <p>• Teacher needs assessment</p>
+                            <p>• Implementation guidance</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="stats">
+            <h3>Project Human Resources & Capacity</h3>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">10</div>
+                    <div class="stat-label">Total Team Members</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">8</div>
+                    <div class="stat-label">Full-time Dedicated Staff</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">200+</div>
+                    <div class="stat-label">Weekly Person-Hours</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">7</div>
+                    <div class="stat-label">Months Full Engagement</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Educational Episodes Produced</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">2,500+</div>
+                    <div class="stat-label">Teachers in Network</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
